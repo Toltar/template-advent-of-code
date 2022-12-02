@@ -2,6 +2,10 @@
 
 for i in {1..25}
 do
+    if [ $i -lt 10 ]
+    then
+        i="0${i}"
+    fi
     DIR="src/day$i"
     INPUT_FILE_PATH="src/day$i/input.txt"
     
